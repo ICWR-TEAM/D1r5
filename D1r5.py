@@ -51,13 +51,9 @@ class d1r5:
 
                 print("[+] [Found : {}]".format(URLCheck))
 
-            else:
-
-                print("[-] [Not Found : {}]".format(URLCheck))
-
         except:
 
-            print("[-] [Error : {}]".format(URLCheck))
+            pass
 
     def Proc(self, URLTarget, ListFile):
 
@@ -66,6 +62,8 @@ class d1r5:
             if os.path.isfile(ListFile):
 
                 print("[+] [Use List File : {}]".format(ListFile))
+                print("[*] [Scanning]")
+                print("\n")
 
                 for x in open(ListFile, errors = 'ignore').read().split("\n"):
 
